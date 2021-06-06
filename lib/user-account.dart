@@ -15,17 +15,22 @@ class _UserAccountState extends State<UserAccount> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          appBar: AppBar(
+                   appBar: AppBar(
             backgroundColor: Colors.white,
             centerTitle: true,
             title: Text(
               "Ecom App UI",
-              style: TextStyle(color: Colors.black),
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
             ),
             actions: [
-              Icon(
-                Icons.notifications,
-                color: Colors.black,
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.notifications,
+                  color: Colors.black,
+                ),
+                tooltip: 'Notification',
               )
             ],
           ),
